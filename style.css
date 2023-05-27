@@ -1,0 +1,197 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Segoe UI Variable Text,Segoe UI,system-ui,-apple-system,sans-serif;
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: underline;
+  color: rgb(51, 187, 241);
+}
+
+/* Header and Background Styles */
+
+body{
+  background-image: url('./img/background.jpeg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Styling for the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header-left,
+.header-center,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* Styling for the buttons */
+.aml-toolbox-btn,
+.login-btn,
+.start-btn {
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.aml-toolbox-btn {
+  background-color: #f3f3f3;
+  color: black;
+  border: none;
+  font-size: 16px;
+}
+
+.login-btn {
+  background-color: #f3f3f3;
+  color: black;
+  border: none;
+  margin-right: 10px;
+}
+
+.start-btn {
+  background-color: #f3f3f3;
+  color: black;
+  border: none;
+}
+
+.login-btn:hover,
+.start-btn:hover {
+  opacity: 0.8;
+}
+
+/* Styling for the header title */
+.header-title {
+  color: #fff;
+  font-size: 24px;
+  margin: auto;
+}
+
+
+/* Main Content Styles Code */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-basis: 20%;
+  padding: 10px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-radius: 10px 10px 0px 0px;
+  transition:all 0.4s ease-in;
+  outline: none;
+  
+}
+
+.accordion::after {
+ 
+  content: '\002B';
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active, .accordion:hover {
+  
+  background-color: #ccc;
+}
+
+.active::after {
+  content: '\2212';
+}
+
+.panel {
+  background-color: white;
+  padding: 8px;
+  display: block;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: auto;
+  border-radius: 0px 0px 10px 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+      flex-basis: 100%;
+  }
+}
+
+
+/* Icon Box styles */
+
+.icon-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.icon-list li{
+  display: flex;
+  align-items: center;
+  /* margin-bottom: -10px; */
+  margin-top: -8px;
+}
+.icon img{
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  margin-top: 15px;
+  position: relative;
+  top: -6px;
+}
+#ads-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

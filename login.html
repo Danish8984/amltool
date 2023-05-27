@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login and Sign Up Page</title>
+  <style>
+    /* CSS styles for the page layout */
+    body {
+      background-color: #4cb4e0;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: auto;
+      margin-top: 50px;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .logo {
+      margin-bottom: 20px;
+    }
+    
+    .logo img {
+      max-width: 100px;
+    }
+    
+    .text-right {
+      text-align: right;
+    position: relative;
+    top: -89px;
+    }
+    
+    .or {
+      margin: 20px 0;
+    }
+    
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .button {
+      width: 200px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid black;
+      text-align: center;
+      cursor: pointer;
+      background-color: white;
+    }
+    #email{
+        padding: 8px;
+        border: 1px solid black;
+        border-radius: 2px;
+    }
+    .next-btn{
+        padding: 8px;
+        background-color: #9e9c9c;
+        border-radius:3px ;
+        color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="img/start.webp" alt="Logo">
+    </div>
+    <div class="text-right">
+      <p>Don't have an account? Sign up</p>
+    </div>
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Email Address">
+      <button type="submit" class="next-btn">Next</button>
+    </form>
+    <div class="or">
+      <p>Or</p>
+    </div>
+    <div class="buttons">
+      
+       <button class="button"><span><img src="./img/google.webp" alt="" style="width: 20px;"></span>Continue with Google</button>
+       <button class="button"><span><img src="./img/facebook.webp" alt="" style="width: 20px;"></span>Continue with Facebook</button>
+       <button class="button"><span><img src="./img/twitter.webp" alt="" style="width: 20px;"></span>Continue with Twitter</button>
+    </div>
+  </div>
+</body>
+</html>
